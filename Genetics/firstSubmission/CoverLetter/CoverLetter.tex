@@ -1,0 +1,138 @@
+\documentclass[10.5pt]{article}
+
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{fullpage}
+
+%% THE USEPACKAGES NECESSARY FOR THIS EXAMPLE
+%% NOTE THAT genetics_manu_style MUST BE CALLED AFTER mychicago
+% \usepackage{graphicx}
+% \usepackage{endfloat}
+% \usepackage{amsfonts}
+% \usepackage{subfigure}
+% \usepackage{genetics_manu_style}
+
+% \usepackage{siunitx}
+% \sisetup{output-exponent-marker=\ensuremath{\mathrm{E}}}
+
+% % Add hyperlinks
+% %\usepackage{hyperref}
+
+% % amsmath package, useful for mathematical formulas
+% \usepackage{amsmath}
+% % amssymb package, useful for mathematical symbols
+% \usepackage{amssymb}
+
+% % graphicx package, useful for including eps and pdf graphics
+% % include graphics with the command \includegraphics
+% \usepackage{graphicx}
+
+% % cite package, to clean up citations in the main text. Do not remove.
+% %\usepackage{cite}
+% \usepackage{natbib}
+% \bibpunct{(}{)}{;}{author-year}{}{,} 
+
+% \usepackage{color}
+
+
+% % Use doublespacing - comment out for single spacing
+% \usepackage{setspace}
+
+% % For splitting/combining figures.
+% \usepackage{subfigure}
+
+% % Use doublespacing - comment out for single spacing
+% %\usepackage{setspace} 
+% %\doublespacing
+
+% % Split table cells
+% %\usepackage{slashbox}
+
+% % Table with curly braces
+% \usepackage{multirow,bigdelim}
+
+% % Underline 
+% \usepackage[normalem]{ulem}
+
+
+\newcommand{\St}{\mathcal{S}}
+\newcommand{\It}{\mathcal{I}}
+\newcommand{\Rt}{\mathcal{R}}
+\newcommand{\traj}{\mathcal{V}}
+
+\newcommand{\tree}{\mathcal{T}}
+
+\newcommand{\comment}[1]{{\color{red} (#1)}}
+
+\newcommand{\stochCoalSIR}{stochastic coalescent SIR}
+\newcommand{\deterCoalSIR}{deterministic coalescent SIR}
+
+\newcommand{\StochCoalSIR}{Stoch. Coal. SIR}
+\newcommand{\DeterCoalSIR}{Deter. Coal. SIR}
+
+
+\newcommand{\stochSIR}{stochastic SIR}
+\newcommand{\StochSIR}{Stochastic SIR}
+\newcommand{\BDSIR}{BDSIR}
+
+\title{Cover Letter}
+\date{}
+
+%% BEGIN DOC
+\begin{document}
+
+\maketitle{}
+
+\noindent{Dear Editor,}
+\vspace{3mm}
+
+We are writing to ask that you consider our manuscript, ``Bayesian epidemic inference via coalescent SIR," for 
+publication in the journal \textit{Genetics}.
+
+We present a fully Bayesian implementation of epidemic inference under the coalescent which allows key epidemic and population dynamical parameters to be estimated from genetic data.  
+Such inference plays a crucial role in linking the epidemiological study of infectious diseases with molecular genetic data and is relevant 
+to researchers in the fields of genetics, epidemiology, immunology, and other related fields. 
+The results of several analyses performed with these newly implemented {\it coalescent SIR models} provide valuable insight into their behavior, 
+both intrinsically and in juxtaposition with a recently developed alternative [K\"uhnert {\it et al}, 2014, J. R. Soc. Interface].  This work contributes both a new method and a better understanding of existing
+methods for analyzing molecular genetic data that may be used to aid in prevention, control, and surveillance of epidemic infections.  
+
+We implemented two coalescent SIR models (using derivations of coalescent rates described in Volz {\it et al}, 2009 and Volz, 2012).
+We extend these models to the full Bayesian treatment on serially-sampled data and also allow for demographic stochasticity in the epidemic trajectories, contrasting this with the deterministic analog. 
+
+The original derivations of coalescent rates and semi-analytical likelihoods were also published in \textit{Genetics} by Erik Volz and colleagues (Volz {\it et al}, 2009; Volz, 2012).  This paper significantly builds on the earlier work by implementation of the model in the aforementioned Bayesian framework. We also demonstrate the advantages and pitfalls of both the 
+stochastic and deterministic variants and compare with a recent non-coalescent alternative. We therefore expect this manuscript to be of particular interest to the readership of \textit{Genetics}.  
+
+\vspace{1mm}
+Thank you for considering our manuscript for review, and we look forward to your response.
+
+\vspace{5mm}
+\noindent{Best regards,}
+\vspace{3mm}
+ 
+\noindent{Alex Popinga}
+
+\noindent{a.popinga@auckland.ac.nz}
+
+\vspace{3mm}
+
+\noindent{Alexei Drummond}
+
+\noindent{alexei@cs.auckland.ac.nz}
+
+
+\vspace{3mm}
+\noindent{Allan Wilson Centre for Molecular Ecology and Evolution}
+
+\noindent{Department of Computer Science,}
+
+\noindent{University of Auckland}
+
+\noindent{Auckland, New Zealand}
+
+% Flush all outstanding floats
+\clearpage
+
+\bibliography{../volzSIR}
+\bibliographystyle{../genetics}
+\end{document}

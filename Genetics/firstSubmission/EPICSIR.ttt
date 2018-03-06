@@ -1,0 +1,167 @@
+\begin{table}[!ht]
+\begin{center}
+\caption{
+\bf{Simulation Study Results:  $R_{0}=1.50$, $S_{0}=499$}}
+\label{table:simStudy}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$\eta$ & Inference & Truth & Mean & Median & Error & Bias & Relative & 95\% HPD \\
+&  &  &  &  &  &  &  HPD width & accuracy \\
+\hline
+\hline
+& Stoch.Coal.SIR & 1.50 & 1.48 & 1.37 & 0.09 & -0.06 & 0.81 & 100.00\% \\
+$\mathcal{R}_0$ & Deter.Coal.SIR & 1.50 & 1.80 & 1.49 & 0.24 & 0.15 & 0.52 & 85.00\% \\
+& \BDSIR{} & 1.50 & 1.46 & 1.43 & 0.08 & -0.03 & 0.47 & 99.00\% \\
+   \hline
+   \hline
+& Stoch.Coal.SIR & 0.30 & 0.19 & 0.17 & 0.40 & -0.40 & 1.06 & 85.00\% \\
+$\gamma$ & Deter.Coal.SIR  & 0.30 & 0.26 & 0.23 & 0.27 & -0.22 & 1.15 & 89.00\% \\
+& \BDSIR{} & 0.30 & 0.26 & 0.25 & 0.18 & -0.18 & 0.72 & 97.00\% \\
+   \hline
+   \hline
+& Stoch.Coal.SIR & 499.00 & 599.39 & 389.88 & 0.25 & -0.22 & 3.56 & 100.00\% \\
+$S_{(0)}$ & Deter.Coal.SIR & 499.00 & 561.72 & 361.36 & 0.44 & -0.26 & 3.36 & 91.00\% \\
+& \BDSIR{} & 499.00 & 996.12 & 713.56 & 0.51 & 0.49 & 4.63 & 100.00\% \\
+   \hline
+   \hline
+& Stoch.Coal.SIR & (varies) & 76.47 & 68.24 & 0.55 & 0.54 & 0.58 & 99.00\% \\
+$z_{(0)}$ & Deter.Coal.SIR & (varies) & 91.03 & 72.51 & 0.39 & 0.38 & 0.42 & 88.00\% \\
+& \BDSIR{} & (varies) & 69.11 & 66.51 & 0.34 & -0.31 & 0.20 & 94.00\% \\
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[!ht]
+\begin{center}
+\caption{\bf{Simulation Study:  Results for Deterministic Coalescent SIR}}
+\label{table:simStudyDet}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$\eta$ & Inference & Truth & Mean & Median & Error & Bias & Relative & 95\% HPD \\
+&  &  &  &  &  &  &  HPD width & accuracy \\
+\hline
+\hline
+& Deter.Coal.SIR & 2.50 & 2.68 & 2.49 & 0.13 & 0.04 & 0.81 & 98.00\% \\
+$\mathcal{R}_0$ & Deter.Coal.SIR & 1.50 & 1.96 & 1.72 & 0.30 & 0.27 & 0.62 & 80.00\% \\
+& Deter.Coal.SIR & 1.20 & 1.80 & 1.49 & 0.43 & 0.43 & 0.65 & 55.00\% \\
+& Deter.Coal.SIR & 1.10 & 1.68 & 1.44 & 0.46 & 0.46 & 0.59 & 25.00\% \\
+   \hline
+   \hline
+& Deter.Coal.SIR & 0.30 & 0.32 & 0.29 & 0.16 & 3.14\mbox{\sc{e}-3} & 1.27 & 99.00\% \\
+$\gamma$ & Deter.Coal.SIR  & 0.30 & 0.26 & 0.25 & 0.25 & -0.20 & 1.04 & 90.00\% \\
+& Deter.Coal.SIR & 0.30 & 0.26 & 0.23 & 0.27 & -0.22 & 1.15 & 89.00\% \\
+& Deter.Coal.SIR & 0.25 & 0.22 & 0.18 & 0.30 & -0.22 & 1.16 & 86.00\% \\
+   \hline
+   \hline
+& Deter.Coal.SIR & 999.00 & 1807.18 & 1132.48 & 0.52 & 0.29 & 4.59 & 98.00\% \\
+$S_{(0)}$ & Deter.Coal.SIR & 499.00 & 570.72 & 338.90 & 0.48 & -0.20 & 2.85 & 92.00\% \\
+& Deter.Coal.SIR & 499.00 & 561.72 & 361.36 & 0.44 & -0.26 & 3.36 & 91.00\% \\
+& Deter.Coal.SIR & 499.00 & 553.38 & 337.10 & 0.42 & -0.26 & 3.08 & 92.00\% \\
+   \hline
+   \hline
+& Deter.Coal.SIR & (varies) & 41.17 & 39.99 & 0.03 & 0.01 & 0.07 & 76.00\% \\
+$z_{(0)}$ & Deter.Coal.SIR & (varies) & 83.17 & 64.02 & 0.39 & 0.38 & 0.42 & 88.00\% \\
+& Deter.Coal.SIR & (varies) & 91.03 & 72.51 & 0.31 & -0.29 & 0.44 & 73.00\% \\
+& Deter.Coal.SIR & (varies) & 112.79 & 90.37 & 0.26 & 0.26 & 0.94 & 85.00\% \\
+   \hline
+\end{tabular}
+\end{center}
+ \end{table}
+ %
+\begin{table}[!ht]
+\footnotesize
+\begin{center}
+\caption{
+\bf{Parameter Estimations from HIV-1 type B Sequence Data}}
+\label{table:hivStudy}
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+\uline{Inference Model} & $R_0$ & $\gamma$ & $S_0$ & Root of & Origin $z_{0}$ of the \\
+HIV cluster & & & & the tree (yr) & epidemic (yr) \\
+   \hline
+   \hline
+    & & & & &\\
+\bf{\StochCoalSIR} & & & & &\\
+------------------ & & & & & \\
+Cluster 1 & 3.31 & 0.27 & 1165 & 1971 & 1969 \\
+ & (2.40 - 4.26) & (8.17E-2 - 0.48) & (448 - 1974) & (1946-1987) & (1942-1986) \\
+Cluster 2 & 2.42 & 0.32 & 976 & 1975 & 1972 \\
+ & (1.86 - 3.07) & (7.72E-2 - 0.57) & (371 - 1701) & (1953 - 1988) & (1947 - 1988) \\
+Cluster 3 & 2.10 & 0.41 & 1442 & 1979 & 1973 \\
+ & (1.07 - 3.73) & (2.59\mbox{\sc{e}-2} - 0.86) & (33 - 4568) & (1959 - 1990) & (1943 - 1989) \\
+Cluster 4 & 3.48 & 0.28 & 1757 & 1964 & 1961 \\
+ & (1.69 - 5.24) & (0.08 - 0.61) & (148 - 5260) & (1922 - 1990) & (1918 - 1991) \\
+Cluster 6 & 3.09 & 0.19 & 727 & 1972 & 1970 \\
+ & (1.94 - 4.53) & (3.72\mbox{\sc{e}-2} - 0.41) & (236 - 1312) & (1950 - 1989) & (1947 - 1988) \\
+   \hline
+   \hline
+   & & & & &\\
+\bf{\DeterCoalSIR} & & & & &\\
+-------------------- & & & & & \\
+Cluster 1 & 3.43 & 0.26 & 1158 & 1969 & 1967 \\
+ & (2.52 - 4.40) & (6.95E-2 - 0.50) & (397 - 2023) & (1941-1987) & (1939-1986) \\
+Cluster 2 & 2.34 & 0.38 & 1163 & 1979 & 1977 \\
+ & (1.92 - 2.81) & (0.13 - 0.66) & (530 - 1895) & (1967 - 1989) & (1964 - 1987) \\
+Cluster 3 & 1.87 & 0.54 & 1298 & 1979 & 1975 \\
+ & (1.42 - 2.43) & (0.14 - 0.97) & (399 - 2267) & (1965 - 1989) & (1960 - 1987) \\
+Cluster 4 & 3.35 & 0.34 & 1479 & 1972 & 1971 \\
+ & (2.02 - 4.86) & (8.22\mbox{\sc{e}-2} - 0.65) & (397 - 2792) & (1948 - 1990) & (1946 - 1989) \\
+Cluster 6 & 3.14 & 0.18 & 693 & 1971 & 1969 \\
+ & (1.98 - 4.64) & (2.99\mbox{\sc{e}-2} - 0.37) & (213 - 1241) & (1949 - 1989) & (1943 - 1988) \\
+   \hline
+   \hline
+   & & & & &\\
+\bf{\BDSIR{}} & & & & &\\
+--------------- & & & & & \\
+Cluster 1 & 3.22 & 0.30 & 880 & 1986 & 1983 \\
+ & (2.18-4.27) & (0.15-0.47) & (142-3592) & (1983-1988) & (1978-1987) \\
+Cluster 2 & 2.45 & 0.17 & 1745 & 1983 & 1978 \\
+& (1.53-3.68) & (0.06-0.35) & (190-8892) & (1979-1986) & (1968-1984) \\
+Cluster 3 & 1.90 & 0.20 & 1540 & 1985 & 1978 \\
+ & (1.22-2.78) & (0.09-0.39) & (153-8558) & (1981-1988) & (1962-1986) \\
+Cluster 4 & 2.62 & 0.15 & 1921 & 1987 & 1981 \\
+ & (1.45-4.29) & (0.06-0.31) & (128-11007) & (1983-1990) & (1970-1988) \\
+Cluster 6 & 3.17 & 0.15 & 2862 & 1986 & 1983 \\
+ & (1.73-5.43) & (0.06-0.31) & (183-16909) & (1981-1989) & (1975-1989) \\
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[!ht]
+\begin{center}
+\caption{
+\bf{Bayesian prior distributions}}
+\label{table:priors}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+& $R_0$ & $\gamma$ & $S_{(0)}$ & $z_{(0)}$ & $\psi/(\psi+\mu)$ \\
+  \hline
+   & & & & & \\
+High $R_{0}$ + HIV1 & LogN(1, 1) & LogN(-1, 1) & LogN(7, 1) & Unif(0, 100) & Beta(1,1) \\
+   & & & & & \\
+   \hline
+   & & & & & \\
+Moderate $R_0$ & LogN(0.5, 1) & LogN(-1, 1) & LogN(6, 1) & Unif(0, 500) & Beta(1,1) \\
+   & & & & & \\
+   \hline
+      & & & & & \\
+Low $R_0$ & LogN(0.1, 1) & LogN(-1.5, 1) & LogN(6, 1) & Unif(0, 500) & Beta(1,1) \\
+   & & & & & \\
+   \hline
+
+\end{tabular}
+\end{center}
+{Prior distributions for the re-estimation of SIR parameters -- the reproduction ratio
+$R_0$, the rate of removal $\gamma$, the number of susceptible individuals at the start of
+the epidemic $S_{(0)}$, the time of origin $z_{(0)}$, and the sampling proportion $\psi/(\psi+\mu)$ (applicable to \BDSIR{} only) -- from the simulated trees (${R_0}\approx2.5$ and ${S_0}=999$),
+HIV-1 data analyses, then simulated trees with lower reproduction ratio and susceptibles (${R_0}\approx1.5$ and ${S_0}=499$,
+and $R_{0}\approx1.10$ and $S_{0}=499$).
+LogN($M$, $S$) is a log-normal distribution with mean $M$ and
+standard deviation $S$ in log space.}
+\end{table}
+\efloatseparator
+ 

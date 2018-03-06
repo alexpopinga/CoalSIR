@@ -1,0 +1,33 @@
+<!-- Generate a simulated compartmental population size history using
+     an implementation of the SIR epidemiological model. -->
+
+<beast version='2.0' namespace='master:master.model:master.steppers:master.outputs:master.conditions'>
+  <run spec='Trajectory'>
+
+    <model spec='Model' id='model'>
+      <population spec='Population' id='S' populationName='S'/>
+      <population spec='Population' id='I' populationName='I'/>
+      <population spec='Population' id='R' populationName='R'/>
+      
+      <reaction spec='Reaction' reactionName="Infection" rate="0.00075">
+	S + I -> 2I
+      </reaction>
+      <reaction spec='Reaction' reactionName="Recovery" rate="0.3">
+	I -> R
+      </reaction>
+    </model>
+    
+    <populationEndCondition spec='PopulationEndCondition'
+			    population='@I'
+			    threshold="0"
+			    exceedCondition="false"
+			    isRejection="false"/>
+    
+    <initialState spec='InitState'>
+      <populationSize spec='PopulationSize' population='@S' size='999'/>
+      <populationSize spec='PopulationSize' population='@I' size='1'/>
+    </initialState>
+    
+    <output spec='JsonOutput' fileName='$(filebase)_output.json'/>
+  </run>
+</beast>

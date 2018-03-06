@@ -1,0 +1,11 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{\sc K{\"u}hnert} {\em et~al.\/}(2014){\sc K{\"u}hnert}, {\sc
+  Stadler}, {\sc Vaughan} and {\sc Drummond}}]{Kuhnert:2014}
+{\sc K{\"u}hnert, D.}, {\sc T.~Stadler}, {\sc T.~G. Vaughan}, and {\sc A.~J.
+  Drummond}, 2014 Simultaneous reconstruction of evolutionary history and
+  epidemiological dynamics from viral sequences with the birth-death sir model.
+\newblock J R Soc Interface {\bf in press}.
+
+\end{thebibliography}

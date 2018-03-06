@@ -1,0 +1,11 @@
+\begin{figure}
+    \begin{center}
+      \includegraphics[width=6.5in]{originFitFigure.pdf}
+    \end{center}
+    \begin{flushleft}
+      \caption{}
+    \end{flushleft}
+    \label{fig:originFit}
+\end{figure}
+\efloatseparator
+ 
